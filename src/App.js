@@ -7,8 +7,20 @@ class App extends Component {
     lastOperation: "Plus"
   }
   clickButton = (event) => {
-    this.setState({total:event.target.id})
-    console.log(event.target.id)
+    let buttonClicked;
+    if(event.target.id==="") {
+      buttonClicked=event.target.parentElement
+    }
+    else {
+      buttonClicked=event.target
+    }
+    console.log(buttonClicked.id)
+      if (buttonClicked.id.substr(0,6)==="Button") {
+        this.setState({total:buttonClicked.id.substr(-1)})
+      }
+      else {
+        this.setState({total:buttonClicked.textContent})
+      }
     // this.setState({ total: event.target.id })
   }
   
