@@ -28,6 +28,7 @@ class App extends Component {
         this.setState({total:Number(this.state.firstNumber)/Number(this.state.total)});
         this.setState({firstNumber:Number(this.state.firstNumber)/Number(this.state.total)});
         break;
+      default:
     }
   }
 
