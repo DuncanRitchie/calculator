@@ -100,7 +100,7 @@ class App extends Component {
       default:
     }
     if (buttonClicked.id.substr(0,6)==="Button") {
-      if (this.state.total==0|isNaN(this.state.total)) {
+      if (this.state.total===0|isNaN(this.state.total)) {
         this.setState({total:buttonClicked.id.substr(-1)})
       }
       else {
