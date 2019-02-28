@@ -117,6 +117,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>Duncan&rsquo;s calculator</h1>
         <Calculator total={this.state.total} clickButton={this.clickButton}/>
       </div>
     );
