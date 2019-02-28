@@ -63,3 +63,38 @@
   background-color:pink;
   box-shadow: inset 0px 5px 2px rgba(0,0,0,0.1);
 }
+
+@media (max-width:590px) {
+  .calculator {
+    width:100vw;
+    height:calc(100vw*80/59);
+    border-radius:calc(100vw*15/590);
+    align-items:center;
+  }
+
+  .display {
+    align-self:center;
+    width:calc(100vw*500/590);
+    margin:calc(100vw*25/590) 0 calc(100vw*5/590);
+    padding:calc(100vw*25/590);
+    height:calc(100vw*100/590);
+    font-size:calc(100vw*50/590);
+    border-radius:calc(100vw*10/590);
+    box-shadow: inset 0px 0px calc(100vw*20/590) rgba(92, 67, 36, 0.3);
+  }
+
+  .buttons {
+    width:calc(100vw*550/590);
+    height:calc(100vw*600/590);
+    font-size:calc(100vw*30/590);
+  }
+
+  .button {
+    width: calc(100vw*130/590);
+    height:calc(100vw*110/590);
+    border-radius:calc(100vw*10/590);
+    box-shadow: 0px 3px 2px rgba(0,0,0,0.1);
+  }
+
+
+}
