@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Calculator from "./Functional.js";
 import './App.css';
 
 class App extends Component {
@@ -117,7 +116,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Duncan&rsquo;s calculator</h1>
+        <h1>Duncan&rsquo;s Calculator</h1>
         <Calculator total={this.state.total} clickButton={this.clickButton}/>
       </div>
     );
@@ -173,9 +172,9 @@ const Buttons = (props) => {
 const Button = (props) => {
   return (
       <div className="button" id={props.id} onClick={props.clickButton}>
-      <div>
-          {props.innerHTML}
-      </div>
+        <div>
+            {props.innerHTML}
+        </div>
       </div>
   )
 }
