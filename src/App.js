@@ -118,6 +118,11 @@ class App extends Component {
       <div className="App">
         <h1>Duncan&rsquo;s Calculator</h1>
         <Calculator total={this.state.total} clickButton={this.clickButton}/>
+        <footer>
+          <li>Made by Duncan Ritchie</li>
+          <li><a href="https://www.github.com/DuncanRitchie/calculator" title="Code on GitHub">See the code</a></li>
+          <li><a href="https://www.duncanritchie.co.uk" title="My website">My website</a></li>
+        </footer>
       </div>
     );
   }
